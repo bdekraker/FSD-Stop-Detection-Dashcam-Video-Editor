@@ -3,11 +3,7 @@
 
 Auto detection of stop / start in driving videos. This application is designed to help users process dashcam footage where the speedometer is visible and automatically detect "boring parts" of the video—those where the car is stationary, such as at stoplights. By leveraging Optical Character Recognition (OCR) and frame processing, the application identifies when the car stops and moves, logs these events, and can export clips of only the moving segments for easier review.
 
-
-
 https://github.com/user-attachments/assets/1c735f70-c1e7-476f-b3a4-356a4186865a
-
-
 
 ## Features
 
@@ -27,6 +23,8 @@ To use this application, you will need to install a few dependencies:
 2. **Tesseract OCR**: Required for reading the speedometer in the dashcam footage.
 3. **FFmpeg**: Required for frame extraction, video processing, and merging.
 
+   This version expects a digital speedometer to be visible in the video, in order to properly detect when the vehicle is stopped or moving.
+
 ### Python Libraries
 
 The following Python libraries are required and can be installed using `pip`:
@@ -36,6 +34,14 @@ The following Python libraries are required and can be installed using `pip`:
 - `matplotlib`
 - `Pillow`
 - `numpy`
+
+You can install the dependencies all at once by using the `requirements.txt` file included in this repository. To install the dependencies with pip, run the following command:
+
+```bash
+pip install -r requirements.txt
+```
+
+This will automatically install all the necessary Python packages.
 
 ## Installation
 
@@ -78,6 +84,12 @@ sudo apt install ffmpeg
 Once Python is installed, you can install the required dependencies by running the following command:
 ```bash
 pip install opencv-python pytesseract matplotlib Pillow numpy
+```
+
+Alternatively, you can install all the required Python libraries from the `requirements.txt` file using the following command:
+
+```bash
+pip install -r requirements.txt
 ```
 
 ## Usage
