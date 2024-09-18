@@ -108,6 +108,12 @@ This will open a file dialog where you can select your dashcam video file (forma
 
 The application will display the first frame of the video. Draw a bounding box around the area of the speedometer. Once you have done this, press `Enter` to confirm.
 
+
+
+https://github.com/user-attachments/assets/4008467c-c64f-4f56-b708-f9100d4a3ed5
+
+
+
 ### Step 3: Output Files
 
 - **Dwell log**: A log file `dwell_log.txt` will be generated, recording the timestamps of when the car starts and stops moving.
