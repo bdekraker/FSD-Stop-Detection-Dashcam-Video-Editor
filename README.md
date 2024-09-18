@@ -1,7 +1,9 @@
 
 # FSD Stop Detection Dashcam Video Editor
 
-Auto detection of stop / start in driving videos. This application is designed to help users process dashcam footage where the speedometer is visible and automatically detect "boring parts" of the video—those where the car is stationary, such as at stoplights. By leveraging Optical Character Recognition (OCR) and frame processing, the application identifies when the car stops and moves, logs these events, and can export clips of only the moving segments for easier review.
+Auto detection of stop / start in driving videos. This application is designed to help users process dashcam footage where the speedometer is visible and automatically detect "boring parts" of the video—those where the car is stationary, such as at stoplights. 
+
+By leveraging Optical Character Recognition (OCR) and frame processing, the application identifies when the car stops and moves, logs these events, and can export clips of only the moving segments for easier review.
 
 https://github.com/user-attachments/assets/1c735f70-c1e7-476f-b3a4-356a4186865a
 
