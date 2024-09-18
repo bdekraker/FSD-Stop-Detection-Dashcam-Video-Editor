@@ -66,6 +66,31 @@ sudo apt update
 sudo apt install tesseract-ocr
 ```
 
+#### macOS
+1. Install Homebrew if you haven't already. Homebrew is a package manager for macOS and is the easiest way to install Tesseract. To install Homebrew, open your terminal and run:
+   ```bash
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   ```
+
+2. After Homebrew is installed, install Tesseract by running the following command in your terminal:
+   ```bash
+   brew install tesseract
+   ```
+
+3. Verify that Tesseract was installed correctly by running:
+   ```bash
+   tesseract --version
+   ```
+
+4. You should see version information about Tesseract, which confirms it is installed and available in your system's PATH.
+
+5. If you installed Tesseract using Homebrew, the default location for Tesseract on macOS is `/usr/local/bin/tesseract`. The application should automatically detect it, but if needed, you can specify the path manually in your code:
+   ```python
+   pytesseract.pytesseract.tesseract_cmd = '/usr/local/bin/tesseract'
+   ```
+
+---
+
 ### Step 3: Install FFmpeg
 
 #### Windows
@@ -78,6 +103,22 @@ Install FFmpeg using your package manager:
 sudo apt update
 sudo apt install ffmpeg
 ```
+
+#### macOS
+1. Similar to Tesseract, the easiest way to install FFmpeg on macOS is using Homebrew. If you haven't installed Homebrew, follow the instructions in the **macOS** section under "Install Tesseract OCR."
+
+2. To install FFmpeg with Homebrew, run the following command in your terminal:
+   ```bash
+   brew install ffmpeg
+   ```
+
+3. Verify the installation by running:
+   ```bash
+   ffmpeg -version
+   ```
+
+4. You should see version information about FFmpeg, which confirms it is installed and available in your system's PATH.
+
 
 ### Step 4: Install Required Python Libraries
 
@@ -127,6 +168,10 @@ The application will display the first frame of the video. Draw a bounding box a
 ## Optional Flags
 
 You can control various aspects of the application using command-line flags.
+
+### `--fps`
+
+Specify an FPS for processing of the video. This affects both reading the speed and outputting an annotated (speed overlayed) video. Default FPS is 3. Higher FPS takes longer to process.
 
 ### `--no-video`
 
