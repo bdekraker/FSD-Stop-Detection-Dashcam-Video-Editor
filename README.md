@@ -15,7 +15,9 @@ https://github.com/user-attachments/assets/1c735f70-c1e7-476f-b3a4-356a4186865a
 - **Export clips of moving segments**: Automatically cut out and export only the parts of the video when the car is moving.
 - **Customizable**: Offers multiple configuration options, including the ability to disable video generation or specify the output directory for clips.
 
-## Web Version (Coming Soon...)
+## Web Version Here:
+
+http://aiblocks.ai/users/bdekraker/fsd-detect/
 
 ## Requirements
 
